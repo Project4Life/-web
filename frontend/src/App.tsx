@@ -48,7 +48,7 @@ function App() {
         <main className="main">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/catalog" element={<Products />} />
+            <Route path = "/catalog" element = {<Products />} />
           </Routes>
         </main>
         <footer className="footer">&copy; 2022 Project4Life</footer>
