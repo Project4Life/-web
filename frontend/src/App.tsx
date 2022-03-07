@@ -3,8 +3,10 @@ import './App.css';
 import { Route, BrowserRouter as Router, Routes, Link } from 'react-router-dom';
 import Products from './Products/Products';
 import Home from './Home/Home';
-import Orders from './Orders/Orders'
-import OrderDetail from './Orders/OrderDetail'
+import Orders from './Orders/Orders';
+import OrderDetail from './Orders/OrderDetail';
+import Payment from './Payment/Payment'; 
+
 
 function App() {
 
@@ -33,6 +35,7 @@ function App() {
             <Link to="/">Home</Link>
             <Link to="/catalog">Catalog</Link>
             <Link to="/orders">Orders</Link>
+            <Link to="/payment">Payment</Link>
           </div>
         </header>
         <aside className="sidebar">
@@ -54,6 +57,7 @@ function App() {
             <Route path = "/catalog" element = {<Products />} />
             <Route path = "orders" element = {<Orders />}></Route>
             <Route path = "/order/:id" element = {<OrderDetail />}></Route>
+            <Route path = "/payment" element = {<Payment />} />
           </Routes>
         </main>
         <footer className="footer">&copy; 2022 Project4Life</footer>
