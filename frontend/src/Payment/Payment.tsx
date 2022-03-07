@@ -11,7 +11,7 @@ function PaymentScreen() {
     return(
         <div>
             <CheckoutSteps step1 step2 step3></CheckoutSteps>
-            <div className="from">
+            <div className="form">
                 <form onSubmit={submitHandler}>
                     <ul className="form-container">
                         <li>
